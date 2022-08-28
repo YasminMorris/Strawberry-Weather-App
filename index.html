@@ -15,35 +15,45 @@
   </head>
   <body>
     <div class="container">
-      <div class="weather-app">
-        <h1>Manchester, UK</h1>
-        <ul>
-          <li>Wednesday 22:00</li>
-          <li>Cloudy</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
-              alt="Cloudy"
-            />
-            22°C | °F
-          </div>
-          <div class="col-6">
+      <div class="weather-app-wrapper">
+        <div class="weather-app">
+          <div class="overview">
+            <h1>Manchester, UK</h1>
             <ul>
-              <li>Precipitation: 40%</li>
-              <li>Humidity: 79%</li>
-              <li>Wind: 2mph</li>
+              <li>Wednesday 22:00</li>
+              <li>Cloudy</li>
             </ul>
           </div>
-          <small>
-            <a
-              href="https://github.com/YasminMorris/Strawberry-Weather-App"
-              target="_blank"
-              >Open-source code</a
-            >, by Yasmin Morris</small
-          >
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/48/partly_cloudy.png"
+                  alt="Cloudy"
+                  id="icon"
+                />
+                <div>
+                  <strong id="temperature">22</strong
+                  ><span class="units">°C | °F</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: 40%</li>
+                <li>Humidity: 79%</li>
+                <li>Wind: 2mph</li>
+              </ul>
+            </div>
+          </div>
         </div>
+        <small>
+          <a
+            href="https://github.com/YasminMorris/Strawberry-Weather-App"
+            target="_blank"
+            >Open-source code</a
+          >, by Yasmin Morris</small
+        >
       </div>
     </div>
     <script src="src/app.js"></script>
